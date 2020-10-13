@@ -12,6 +12,8 @@ target 'weatherapp' do
 
   pod 'react-native-restart', :path => '../node_modules/react-native-restart'
 
+  pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
+
   target 'weatherappTests' do
     inherit! :complete
     # Pods for testing

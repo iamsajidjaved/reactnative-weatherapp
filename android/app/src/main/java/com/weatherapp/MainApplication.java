@@ -1,4 +1,4 @@
-package com.weatherapp;
+package com.sajidjaved.weatherapp;
 
 import android.app.Application;
 import android.content.Context;
