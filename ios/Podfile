@@ -3,18 +3,14 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'weatherapp' do
+target 'OpenWeatherApplication' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
-  pod 'react-native-restart', :path => '../node_modules/react-native-restart'
-
-  pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
-
-  target 'weatherappTests' do
+  target 'OpenWeatherApplicationTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -29,10 +25,10 @@ target 'weatherapp' do
   end
 end
 
-target 'weatherapp-tvOS' do
-  # Pods for weatherapp-tvOS
+target 'OpenWeatherApplication-tvOS' do
+  # Pods for OpenWeatherApplication-tvOS
 
-  target 'weatherapp-tvOSTests' do
+  target 'OpenWeatherApplication-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
